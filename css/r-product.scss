@@ -1,0 +1,17 @@
+@import url("../src/fonts/Gilroy/stylesheet.css");
+
+$gilroy: "Gilroy";
+$gold: #bd8d44;
+$gray: #343434;
+$black: #000000;
+$lightgray: #dfdfdf;
+
+@mixin font($titleVal, $lineHeight, $fontWeight) {
+  font-size: $titleVal;
+  color: $black;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+}
+
+@media all and (max-width: 768px) {
+}

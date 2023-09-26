@@ -21,9 +21,26 @@ $(document).ready(function () {
     $("header .logo-menu .menu").toggleClass("non-active");
   });
 
+  $(".view .grid-style").click(function () {
+    $(".catalog .second").removeClass("list-style");
+  });
+
+  $(".view .list-style").click(function () {
+    $(".catalog .second").addClass("list-style");
+  });
+
+  $(".filter-mobile .main").click(function () {
+    $(this).siblings(".inners").slideToggle();
+    $(this).toggleClass("active");
+  });
+
+  $(".filter-mobile .room .heading").click(function () {
+    $(this).siblings(".categories").slideToggle();
+    $(this).parent(".room").toggleClass("active");
+  });
+
   const hamb = document.querySelector("#hamb");
   const popup = document.querySelector("#popup");
-  const body = document.body;
   const navbar = document.querySelector(".navbar");
 
   const menu = document.querySelector("#menu").cloneNode(1);

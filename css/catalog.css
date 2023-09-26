@@ -1,0 +1,268 @@
+@import url("../src/fonts/Gilroy/stylesheet.css");
+.catalog {
+  position: relative;
+  padding: 140px 0 72px;
+  background-color: #fffdf8;
+}
+.catalog .heading .view {
+  display: none;
+}
+.catalog .heading .left {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.catalog .heading .line {
+  border-radius: 2px;
+  width: 50px;
+  height: 4px;
+  flex-shrink: 0;
+  background-color: #513520;
+}
+.catalog .heading h1 {
+  font-size: 28px;
+  color: #000000;
+  line-height: 32px;
+  font-weight: 700;
+  color: #141515;
+  margin: 0;
+}
+.catalog .big-wrapper {
+  display: flex;
+  gap: 123px;
+  width: 100%;
+}
+.catalog .big-wrapper .filter-category {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex-shrink: 0;
+  margin-top: 96px;
+}
+.catalog .big-wrapper .filter-category a {
+  font-size: 17px;
+  color: #000000;
+  line-height: 24px;
+  font-weight: 400;
+}
+.catalog .big-wrapper .filter-category a:focus {
+  font-size: 17px;
+  color: #000000;
+  line-height: 24px;
+  font-weight: 700;
+  color: #bd8d44;
+}
+.catalog .big-wrapper .sort {
+  width: 100%;
+}
+.catalog .big-wrapper .sort .first {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #9a9da3;
+  padding-bottom: 12px;
+  width: 100%;
+}
+.catalog .big-wrapper .sort .first .left {
+  display: flex;
+  gap: 64px;
+}
+.catalog .big-wrapper .sort .first .left .dropbtn {
+  background-color: transparent;
+  font-size: 17px;
+  color: #000000;
+  line-height: 28px;
+  font-weight: 400;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.catalog .big-wrapper .sort .first .left .dropbtn svg {
+  transition: all 0.3s;
+  transform: rotate(0deg);
+}
+.catalog .big-wrapper .sort .first .left .dropbtn:hover svg {
+  transform: rotate(180deg);
+  transition: all 0.3s;
+}
+.catalog .big-wrapper .sort .first .left .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.catalog .big-wrapper .sort .first .left .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+.catalog .big-wrapper .sort .first .left .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.catalog .big-wrapper .sort .first .left .dropdown-content a:hover {
+  background-color: #ddd;
+}
+.catalog .big-wrapper .sort .first .left .dropdown:hover .dropdown-content {
+  display: block;
+}
+.catalog .big-wrapper .sort .first .left .dropdown:hover .dropbtn svg {
+  transition: all 0.3s;
+  transform: rotate(0deg);
+}
+.catalog .big-wrapper .sort .first .left .dropdown:hover .dropbtn:hover svg {
+  transform: rotate(180deg);
+  transition: all 0.3s;
+}
+.catalog .big-wrapper .sort .first .view {
+  display: flex;
+  gap: 20px;
+}
+.catalog .big-wrapper .sort .first .view p {
+  font-size: 17px;
+  color: #000000;
+  line-height: 28px;
+  font-weight: 400;
+  color: #141515;
+}
+.catalog .big-wrapper .sort .first .view a:focus svg rect {
+  fill: #bd8d44;
+}
+.catalog .big-wrapper .sort .first .view a svg rect {
+  fill: #513520;
+}
+.catalog .big-wrapper .sort .first .filter-mobile {
+  display: none;
+}
+.catalog .big-wrapper .sort .second {
+  margin-top: 32px;
+  transition: all 0.5s;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 21px;
+}
+.catalog .big-wrapper .sort .second .item {
+  border-radius: 15px;
+  border: 1px solid #9a9da3;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  transition: all 0.5s;
+  max-width: 338px;
+}
+.catalog .big-wrapper .sort .second .item .img-wrapper {
+  height: 336px;
+  width: 100%;
+  max-width: 338px;
+  position: relative;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.catalog .big-wrapper .sort .second .item .img-wrapper .swiper-grid > .swiper-wrapper {
+  flex-wrap: nowrap;
+}
+.catalog .big-wrapper .sort .second .item .img-wrapper .swiper-pagination-bullet-active {
+  background-color: #9a9da3;
+}
+.catalog .big-wrapper .sort .second .item .img-wrapper .swiper-pagination {
+  transition: all 0.5s;
+  bottom: 10px;
+}
+.catalog .big-wrapper .sort .second .item .img-wrapper .swiper {
+  max-width: 100%;
+  height: 100%;
+}
+.catalog .big-wrapper .sort .second .item .img-wrapper .swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.catalog .big-wrapper .sort .second .item .info-item {
+  padding: 20px 12px;
+  display: flex;
+  transition: all 0.5s;
+  justify-content: space-between;
+}
+.catalog .big-wrapper .sort .second .item .info-item h3 {
+  font-size: 15px;
+  color: #000000;
+  line-height: 24px;
+  font-weight: 400;
+  color: #141515;
+  transition: all 0.5s;
+  margin: 0;
+}
+.catalog .big-wrapper .sort .second .item .info-item .price h2 {
+  margin: 0;
+  font-size: 15px;
+  color: #000000;
+  line-height: 24px;
+  font-weight: 700;
+  transition: all 0.5s;
+  color: #141515;
+}
+.catalog .big-wrapper .sort .second .item .info-item .price .hidden-btn {
+  background-color: #513520;
+  padding: 8px 67px;
+  transition: all 0.5s;
+  display: none;
+}
+.catalog .big-wrapper .sort .second.list-style {
+  grid-template-columns: 1fr;
+  gap: 20px;
+  transition: all 0.5s;
+}
+.catalog .big-wrapper .sort .second.list-style .item {
+  flex-direction: row;
+  transition: all 0.5s;
+  max-width: 100%;
+}
+.catalog .big-wrapper .sort .second.list-style .item .img-wrapper {
+  height: 120px;
+  transition: all 0.5s;
+  max-width: 120px;
+}
+.catalog .big-wrapper .sort .second.list-style .item .img-wrapper .swiper-pagination {
+  transition: all 0.5s;
+  bottom: 0px;
+}
+.catalog .big-wrapper .sort .second.list-style .item .info-item {
+  padding: 20px 36px;
+  width: 100%;
+  transition: all 0.5s;
+  align-items: center;
+}
+.catalog .big-wrapper .sort .second.list-style .item .info-item h3 {
+  font-size: 19px;
+  color: #000000;
+  line-height: 32px;
+  font-weight: 400;
+  transition: all 0.5s;
+  color: #141515;
+}
+.catalog .big-wrapper .sort .second.list-style .item .info-item .price {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: all 0.5s;
+  align-items: end;
+}
+.catalog .big-wrapper .sort .second.list-style .item .info-item .price h2 {
+  font-size: 19px;
+  color: #000000;
+  line-height: 32px;
+  font-weight: 700;
+  transition: all 0.5s;
+  color: #141515;
+}
+.catalog .big-wrapper .sort .second.list-style .item .info-item .price .hidden-btn {
+  transition: all 0.5s;
+  display: block;
+}/*# sourceMappingURL=catalog.css.map */

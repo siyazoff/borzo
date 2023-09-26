@@ -27,3 +27,54 @@ const toCatalog = new Swiper(".swiper-small-cards", {
     },
   },
 });
+
+const gallerySwiper = new Swiper(".gallery-swiper", {
+  direction: "horizontal",
+  loop: false,
+
+  // spaceBetween: 10,
+  slidesPerView: 1,
+  grabCursor: true,
+  freeMode: true,
+
+  navigation: {
+    nextEl: ".about_galley_next",
+    prevEl: ".about_galley_prev",
+  },
+
+  breakpoints: {
+    320: {
+      spaceBetween: 5,
+    },
+    768: {
+      spaceBetween: 5,
+    },
+    1400: {
+      spaceBetween: 20,
+    },
+  },
+});
+
+// Function that actually builds the swiper
+const buildSwiperSlider = (sliderElm) => {
+  let sliderIdentifier = sliderElm.dataset.id;
+
+  return new Swiper(`.swiper-${sliderIdentifier}`, {
+    direction: "horizontal",
+    loop: false,
+
+    spaceBetween: 0,
+    grabCursor: true,
+    slidesPerView: 1,
+
+    pagination: {
+      el: `.swiper-pagination-${sliderIdentifier}`,
+    },
+  });
+};
+
+// Get all of the swipers on the page
+const allSliders = document.querySelectorAll(".swiper-grid");
+
+// Loop over all of the fetched sliders and apply Swiper on each one.
+allSliders.forEach((slider) => buildSwiperSlider(slider));

@@ -1,0 +1,306 @@
+@import url("../src/fonts/Gilroy/stylesheet.css");
+
+$gilroy: "Gilroy";
+$gold: #bd8d44;
+$gray: #343434;
+$black: #000000;
+$lightgray: #dfdfdf;
+
+@mixin font($titleVal, $lineHeight, $fontWeight) {
+  font-size: $titleVal;
+  color: $black;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+}
+
+@media all and (max-width: 768px) {
+  .catalog {
+    padding: 100px 0 40px;
+
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+
+      .view {
+        display: flex;
+        gap: 8px;
+
+        p {
+          @include font(14px, 25px, 400);
+        }
+
+        a {
+          &:focus {
+            svg {
+              rect {
+                fill: #bd8d44;
+              }
+            }
+          }
+
+          svg {
+            rect {
+              fill: #513520;
+            }
+          }
+        }
+      }
+
+      .left {
+        gap: 8px;
+        margin-bottom: 0;
+      }
+
+      .line {
+        width: 32px;
+        height: 2px;
+      }
+
+      h1 {
+        @include font(19px, 32px, 700);
+        color: #141515;
+      }
+    }
+
+    .big-wrapper {
+      display: flex;
+      gap: 123px;
+      width: 100%;
+
+      .filter-category {
+        display: none;
+      }
+
+      .sort {
+        width: 100%;
+
+        .first {
+          display: flex;
+          justify-content: space-between;
+          border-bottom: none;
+          padding-bottom: 12px;
+          width: 100%;
+
+          .left {
+            display: none;
+          }
+
+          .view {
+            display: none;
+          }
+
+          .filter-mobile {
+            display: block;
+            width: 100%;
+            border: 1px solid #9a9da3;
+            border-radius: 10px;
+            height: 100%;
+            padding: 12px 16px;
+            overflow: hidden;
+            transition: all 0.3s;
+
+            .main {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              transition: all 0.3s;
+              margin-bottom: 0px;
+
+              h3 {
+                @include font(13px, 20px, 700);
+                margin: 0;
+              }
+
+              svg {
+                transform: rotate(0);
+                transition: all 0.3s;
+              }
+
+              &.active {
+                margin-bottom: 20px;
+                transition: all 0.3s;
+
+                svg {
+                  transform: rotate(180deg);
+                  transition: all 0.3s;
+                }
+              }
+            }
+
+            .inners {
+              display: none;
+
+              .room {
+                transition: all 0.3s;
+
+                svg {
+                  transition: all 0.3s;
+                  transform: rotate(0);
+                }
+
+                &.active {
+                  svg {
+                    transform: rotate(180deg);
+                    transition: all 0.3s;
+                  }
+                }
+              }
+
+              .heading {
+                transition: all 0.3s;
+                margin-bottom: 0px;
+                justify-content: start;
+                gap: 8px;
+
+                h2 {
+                  @include font(13px, 20px, 400);
+                  margin: 0;
+                  color: #141515;
+                }
+              }
+
+              .categories {
+                display: none;
+                margin-bottom: 10px;
+
+                .category {
+                  display: flex;
+                  gap: 8px;
+                  align-items: center;
+
+                  h2 {
+                    @include font(13px, 20px, 400);
+                    margin: 0;
+                  }
+
+                  &:focus {
+                    svg {
+                      circle {
+                        fill: #513520;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .second {
+          margin-top: 16px;
+          grid-template-columns: 1fr 1fr;
+          gap: 16px;
+
+          .item {
+            border-radius: 10px;
+            max-width: 100%;
+
+            .img-wrapper {
+              height: 100%;
+              max-width: 100%;
+
+              .swiper-pagination {
+                transition: all 0.5s;
+                bottom: 1px;
+              }
+
+              .swiper {
+                max-width: 100%;
+                height: 100%;
+              }
+            }
+
+            .info-item {
+              padding: 10px 5px;
+              flex-direction: column;
+              text-align: center;
+
+              h3 {
+                @include font(13px, 20px, 400);
+                color: #141515;
+              }
+
+              .price {
+                h2 {
+                  margin: 0;
+                  @include font(13px, 20px, 700);
+                  color: #141515;
+                }
+
+                .hidden-btn {
+                  padding: 8px 40px;
+                }
+              }
+            }
+          }
+
+          &.list-style {
+            gap: 12px;
+
+            .item {
+              flex-direction: row;
+              transition: all 0.5s;
+              max-width: 100%;
+
+              .img-wrapper {
+                height: 120px;
+                transition: all 0.5s;
+                max-width: 120px;
+
+                .swiper-pagination {
+                  transition: all 0.5s;
+                  bottom: 0px;
+                }
+              }
+
+              .info-item {
+                padding: 16px 12px;
+                align-items: end;
+
+                h3 {
+                  @include font(13px, 20px, 400);
+                  color: #141515;
+                }
+
+                .price {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 6px;
+                  transition: all 0.5s;
+                  align-items: end;
+
+                  h2 {
+                    @include font(13px, 20px, 700);
+                    color: #141515;
+                  }
+
+                  .hidden-btn {
+                    transition: all 0.5s;
+                    display: block;
+                    @include font(13px, 20px, 700);
+                    color: #ffffff;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 360px) {
+  .catalog
+    .big-wrapper
+    .sort
+    .second.list-style
+    .item
+    .info-item
+    .price
+    .hidden-btn {
+    padding: 8px 15px;
+  }
+}

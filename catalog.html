@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="BORZO | Мебель под заказ" />
+    <meta
+      property="og:description"
+      content="Дизайнерская мебель под заказ в Астане"
+    />
+    <title>BORZO | Мебель под заказ</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/catalog.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/r-catalog.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/jquery-ui.css" />
+    <link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./css/aos.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./lightbox/css/lightbox.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/cferdinandi/tabby/dist/css/tabby-ui.min.css"
+    />
+
+    <!-- cdn css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- !header starts  -->
+    <header class="header" id="header">
+      <nav class="navbar">
+        <div class="cont">
+          <div class="navbar__wrap">
+            <div class="hamb">
+              <div class="hamb__field" id="hamb">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+            <div class="logo-menu">
+              <a href="\" class="logo" id="logo">
+                <!-- !logo starts -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="121"
+                  height="32"
+                  viewBox="0 0 121 32"
+                  fill="none"
+                >
+                  <mask
+                    id="mask0_2234_63"
+                    style="mask-type: luminance"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="64"
+                    height="32"
+                  >
+                    <path d="M64 0H0V32H64V0Z" fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_2234_63)">
+                    <path
+                      d="M64 -15.9711H0V48.0289H64V-15.9711Z"
+                      fill="black"
+                    />
+                  </g>
+                  <path
+                    d="M17.7586 24.3315C17.2973 24.3892 16.7207 24.3892 16.2018 24.3892H12.3964V18.3351H15.9712C16.5478 18.3351 17.0667 18.3352 17.6433 18.3928C19.2 18.5081 20.4108 19.4306 20.4108 21.391C20.4108 23.1784 19.1423 24.2162 17.7586 24.3315ZM12.3387 8.8793H15.5099C16.0865 8.8793 16.7207 8.93695 17.182 8.99461C18.6234 9.22524 19.546 9.97479 19.546 11.5892C19.546 13.2036 18.7387 14.0108 17.2396 14.2415C16.7784 14.2991 16.2018 14.3568 15.6252 14.3568H12.3387V8.8793ZM21.6216 15.6829C24.0433 14.8757 25.2541 13.2036 25.2541 10.8397C25.2541 7.61083 23.0054 5.24686 19.1423 4.7856C17.9315 4.67029 17.2973 4.67029 16.0288 4.67029H6.86127V28.7135H15.9712C17.4126 28.7135 18.2198 28.7135 19.373 28.5982C22.6018 28.1946 26.1189 26.0036 26.1189 21.5063C26.1189 18.4505 24.6775 16.4901 21.6216 15.6829Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M39.3225 25.0811C35.3441 25.0811 32.8648 21.9676 32.8648 16.6054C32.8648 11.1856 35.2864 8.12975 39.3225 8.12975C43.3008 8.12975 45.7225 11.1856 45.7225 16.6054C45.7225 22.0252 43.3008 25.0811 39.3225 25.0811ZM39.3225 4.15137C31.8846 4.15137 27.2144 9.05227 27.2144 16.6631C27.2144 24.2739 31.827 29.1748 39.3225 29.1748C46.7603 29.1748 51.3729 24.2739 51.3729 16.6631C51.3729 8.99462 46.7603 4.15137 39.3225 4.15137Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M59.0991 15.2216V8.8793H62.1549C62.9045 8.8793 63.5387 8.93695 64 8.93695C65.7874 9.16758 67.0558 9.85948 67.0558 12.0505C67.0558 14.2415 65.5567 14.991 63.7694 15.164C63.3081 15.2216 62.6739 15.2216 61.9243 15.2216H59.0991ZM71.6108 22.7171C71.3225 19.9496 70.4 17.9892 67.9784 17.1243C71.0342 16.2595 72.7639 14.2415 72.7639 11.1856C72.7639 6.9766 69.8811 5.24687 66.4216 4.84326C65.1531 4.72795 64.2306 4.67029 62.7892 4.67029H53.6793V28.7135H59.1567V19.2H61.2901C61.9243 19.2 62.5585 19.2 63.1928 19.2577C64.9802 19.373 66.018 20.9297 66.3063 23.5243C66.5369 25.5424 66.8829 26.9838 67.4594 28.6559H73.3982C72.418 27.2721 71.9567 25.5424 71.6108 22.7171Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M94.9621 24.6198H82.3351L94.7892 9.10989V4.90088H76.627V9.16755H88.2738L75.6468 24.7928V28.9441H94.9621V24.6198Z"
+                    fill="#BD8D44"
+                  />
+                  <path
+                    d="M108.108 25.3693C104.13 25.3693 101.65 22.2558 101.65 16.8936C101.65 11.4738 104.072 8.41796 108.108 8.41796C112.086 8.41796 114.508 11.4738 114.508 16.8936C114.508 22.2558 112.086 25.3693 108.108 25.3693ZM108.108 4.43958C100.67 4.43958 96 9.34048 96 16.9513C96 24.5621 100.613 29.463 108.108 29.463C115.546 29.463 120.159 24.5621 120.159 16.9513C120.159 9.28282 115.488 4.43958 108.108 4.43958Z"
+                    fill="#BD8D44"
+                  />
+                </svg>
+                <!-- !logo ends -->
+              </a>
+              <ul class="menu" id="menu">
+                <li><a href="\">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li class="mobile-li">
+                  <a href="tel:+7 700 293 69 13">
+                    <div class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                      >
+                        <circle cx="16" cy="16" r="16" fill="#9A9DA3" />
+                        <path
+                          d="M20.82 18.1735L19.1267 17.9802C18.9276 17.9568 18.7258 17.9788 18.5364 18.0446C18.347 18.1105 18.175 18.2183 18.0334 18.3602L16.8067 19.5868C14.9142 18.6243 13.3759 17.086 12.4134 15.1935L13.6467 13.9602C13.9334 13.6735 14.0734 13.2735 14.0267 12.8668L13.8334 11.1868C13.7956 10.8616 13.6395 10.5617 13.3949 10.3441C13.1502 10.1265 12.8341 10.0064 12.5067 10.0068H11.3534C10.6 10.0068 9.97336 10.6335 10.02 11.3868C10.3734 17.0802 14.9267 21.6268 20.6134 21.9802C21.3667 22.0268 21.9934 21.4002 21.9934 20.6468V19.4935C22 18.8202 21.4934 18.2535 20.82 18.1735Z"
+                          fill="#F5F4F0"
+                        />
+                      </svg>
+                    </div>
+                    <p>+7 700 293 69 13</p>
+                  </a>
+                </li>
+              </ul>
+              <ul class="search-phone">
+                <li class="search" id="search-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                  >
+                    <path
+                      d="M7.33333 12.6667C10.2789 12.6667 12.6667 10.2789 12.6667 7.33333C12.6667 4.38781 10.2789 2 7.33333 2C4.38781 2 2 4.38781 2 7.33333C2 10.2789 4.38781 12.6667 7.33333 12.6667Z"
+                      stroke="#F5F4F0"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M14 14L11.1333 11.1333"
+                      stroke="#F5F4F0"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </li>
+                <div class="search-div">
+                  <div class="search-section">
+                    <form>
+                      <input
+                        type="text"
+                        id="search-input"
+                        class="search-input"
+                        placeholder="Поиск"
+                      />
+                    </form>
+                  </div>
+                </div>
+                <li class="phone">
+                  <a href="tel:+7 700 293 69 13">
+                    <div class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        class="with-search"
+                      >
+                        <circle cx="16" cy="16" r="16" fill="#9A9DA3" />
+                        <path
+                          d="M20.82 18.1735L19.1267 17.9802C18.9276 17.9568 18.7258 17.9788 18.5364 18.0446C18.347 18.1105 18.175 18.2183 18.0334 18.3602L16.8067 19.5868C14.9142 18.6243 13.3759 17.086 12.4134 15.1935L13.6467 13.9602C13.9334 13.6735 14.0734 13.2735 14.0267 12.8668L13.8334 11.1868C13.7956 10.8616 13.6395 10.5617 13.3949 10.3441C13.1502 10.1265 12.8341 10.0064 12.5067 10.0068H11.3534C10.6 10.0068 9.97336 10.6335 10.02 11.3868C10.3734 17.0802 14.9267 21.6268 20.6134 21.9802C21.3667 22.0268 21.9934 21.4002 21.9934 20.6468V19.4935C22 18.8202 21.4934 18.2535 20.82 18.1735Z"
+                          fill="#F5F4F0"
+                        />
+                      </svg>
+                    </div>
+                    <p>+7 700 293 69 13</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="popup" id="popup"></div>
+      </nav>
+    </header>
+    <!-- !header ends  -->
+
+    <section class="catalog" id="catalog">
+      <div class="cont">
+        <div class="heading">
+          <div class="left">
+            <div class="line"></div>
+            <h1>Каталог</h1>
+          </div>
+          <div class="view">
+            <p>Просмотр :</p>
+            <a class="grid-style" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+              >
+                <rect width="4" height="4" rx="2" fill="#BD8D44" />
+                <rect y="6" width="4" height="4" rx="2" fill="#BD8D44" />
+                <rect y="12" width="4" height="4" rx="2" fill="#BD8D44" />
+                <rect x="12" width="4" height="4" rx="2" fill="#BD8D44" />
+                <rect x="12" y="6" width="4" height="4" rx="2" fill="#BD8D44" />
+                <rect
+                  x="12"
+                  y="12"
+                  width="4"
+                  height="4"
+                  rx="2"
+                  fill="#BD8D44"
+                />
+                <rect x="6" width="4" height="4" rx="2" fill="#BD8D44" />
+                <rect x="6" y="6" width="4" height="4" rx="2" fill="#BD8D44" />
+                <rect x="6" y="12" width="4" height="4" rx="2" fill="#BD8D44" />
+              </svg>
+            </a>
+            <a class="list-style" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="14"
+                viewBox="0 0 16 14"
+                fill="none"
+              >
+                <rect width="16" height="2" rx="1" fill="#513520" />
+                <rect y="6" width="16" height="2" rx="1" fill="#513520" />
+                <rect y="12" width="16" height="2" rx="1" fill="#513520" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="big-wrapper">
+          <div class="filter-category">
+            <a href="#">Все</a>
+            <a href="#">Кресло</a>
+            <a href="#">Шезлонги</a>
+            <a href="#">Стулья</a>
+            <a href="#">Барные стулья</a>
+            <a href="#">Диваны</a>
+            <a href="#">Столы</a>
+          </div>
+          <div class="sort">
+            <div class="first">
+              <div class="left">
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    <p>Комната</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="8"
+                      height="6"
+                      viewBox="0 0 8 6"
+                      fill="none"
+                    >
+                      <path
+                        d="M4 6L0.535899 -6.52533e-07L7.4641 -4.68497e-08L4 6Z"
+                        fill="#141515"
+                      />
+                    </svg>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    <p>Цвет</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="8"
+                      height="6"
+                      viewBox="0 0 8 6"
+                      fill="none"
+                    >
+                      <path
+                        d="M4 6L0.535899 -6.52533e-07L7.4641 -4.68497e-08L4 6Z"
+                        fill="#141515"
+                      />
+                    </svg>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    <p>Стоимость</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="8"
+                      height="6"
+                      viewBox="0 0 8 6"
+                      fill="none"
+                    >
+                      <path
+                        d="M4 6L0.535899 -6.52533e-07L7.4641 -4.68497e-08L4 6Z"
+                        fill="#141515"
+                      />
+                    </svg>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+                </div>
+              </div>
+              <div class="view">
+                <p>Просмотр :</p>
+                <a class="grid-style" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                  >
+                    <rect width="4" height="4" rx="2" fill="#BD8D44" />
+                    <rect y="6" width="4" height="4" rx="2" fill="#BD8D44" />
+                    <rect y="12" width="4" height="4" rx="2" fill="#BD8D44" />
+                    <rect x="12" width="4" height="4" rx="2" fill="#BD8D44" />
+                    <rect
+                      x="12"
+                      y="6"
+                      width="4"
+                      height="4"
+                      rx="2"
+                      fill="#BD8D44"
+                    />
+                    <rect
+                      x="12"
+                      y="12"
+                      width="4"
+                      height="4"
+                      rx="2"
+                      fill="#BD8D44"
+                    />
+                    <rect x="6" width="4" height="4" rx="2" fill="#BD8D44" />
+                    <rect
+                      x="6"
+                      y="6"
+                      width="4"
+                      height="4"
+                      rx="2"
+                      fill="#BD8D44"
+                    />
+                    <rect
+                      x="6"
+                      y="12"
+                      width="4"
+                      height="4"
+                      rx="2"
+                      fill="#BD8D44"
+                    />
+                  </svg>
+                </a>
+                <a class="list-style" href="#">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="14"
+                    viewBox="0 0 16 14"
+                    fill="none"
+                  >
+                    <rect width="16" height="2" rx="1" fill="#513520" />
+                    <rect y="6" width="16" height="2" rx="1" fill="#513520" />
+                    <rect y="12" width="16" height="2" rx="1" fill="#513520" />
+                  </svg>
+                </a>
+              </div>
+              <div class="filter-mobile">
+                <div class="main">
+                  <h3>Фильтр</h3>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="8"
+                    height="6"
+                    viewBox="0 0 8 6"
+                    fill="none"
+                  >
+                    <path
+                      d="M4 6L0.535899 -6.52533e-07L7.4641 -4.68497e-08L4 6Z"
+                      fill="#434443"
+                    />
+                  </svg>
+                </div>
+                <div class="inners">
+                  <div class="room room-b">
+                    <div class="heading">
+                      <h2>Комната</h2>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="8"
+                        height="6"
+                        viewBox="0 0 8 6"
+                        fill="none"
+                      >
+                        <path
+                          d="M4 6L0.535899 -6.52533e-07L7.4641 -4.68497e-08L4 6Z"
+                          fill="#141515"
+                        />
+                      </svg>
+                    </div>
+                    <div class="categories">
+                      <a href="#" class="category">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="8"
+                          height="8"
+                          viewBox="0 0 8 8"
+                          fill="none"
+                        >
+                          <circle cx="4" cy="4" r="3.5" stroke="#9A9DA3" />
+                        </svg>
+                        <h2>Зал</h2>
+                      </a>
+                      <a href="#" class="category">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="8"
+                          height="8"
+                          viewBox="0 0 8 8"
+                          fill="none"
+                        >
+                          <circle cx="4" cy="4" r="3.5" stroke="#9A9DA3" />
+                        </svg>
+                        <h2>Спальня</h2>
+                      </a>
+                      <a href="#" class="category">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="8"
+                          height="8"
+                          viewBox="0 0 8 8"
+                          fill="none"
+                        >
+                          <circle cx="4" cy="4" r="3.5" stroke="#9A9DA3" />
+                        </svg>
+                        <h2>Ванная</h2>
+                      </a>
+                      <a href="#" class="category">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="8"
+                          height="8"
+                          viewBox="0 0 8 8"
+                          fill="none"
+                        >
+                          <circle cx="4" cy="4" r="3.5" stroke="#9A9DA3" />
+                        </svg>
+                        <h2>Кухня</h2>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="room room-b">
+                    <div class="heading">
+                      <h2>Цвет</h2>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="8"
+                        height="6"
+                        viewBox="0 0 8 6"
+                        fill="none"
+                      >
+                        <path
+                          d="M4 6L0.535899 -6.52533e-07L7.4641 -4.68497e-08L4 6Z"
+                          fill="#141515"
+                        />
+                      </svg>
+                    </div>
+                    <div class="categories">
+                      <a href="#" class="category">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="8"
+                          height="8"
+                          viewBox="0 0 8 8"
+                          fill="none"
+                        >
+                          <circle cx="4" cy="4" r="3.5" stroke="#9A9DA3" />
+                        </svg>
+                        <h2>Зал</h2>
+                      </a>
+                      <a href="#" class="category">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="8"
+                          height="8"
+                          viewBox="0 0 8 8"
+                          fill="none"
+                        >
+                          <circle cx="4" cy="4" r="3.5" stroke="#9A9DA3" />
+                        </svg>
+                        <h2>Спальня</h2>
+                      </a>
+                      <a href="#" class="category">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="8"
+                          height="8"
+                          viewBox="0 0 8 8"
+                          fill="none"
+                        >
+                          <circle cx="4" cy="4" r="3.5" stroke="#9A9DA3" />
+                        </svg>
+                        <h2>Ванная</h2>
+                      </a>
+                      <a href="#" class="category">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="8"
+                          height="8"
+                          viewBox="0 0 8 8"
+                          fill="none"
+                        >
+                          <circle cx="4" cy="4" r="3.5" stroke="#9A9DA3" />
+                        </svg>
+                        <h2>Кухня</h2>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="room room-b">
+                    <div class="heading">
+                      <h2>Стоимость</h2>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="8"
+                        height="6"
+                        viewBox="0 0 8 6"
+                        fill="none"
+                      >
+                        <path
+                          d="M4 6L0.535899 -6.52533e-07L7.4641 -4.68497e-08L4 6Z"
+                          fill="#141515"
+                        />
+                      </svg>
+                    </div>
+                    <div class="categories">
+                      <a href="#" class="category">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="8"
+                          height="8"
+                          viewBox="0 0 8 8"
+                          fill="none"
+                        >
+                          <circle cx="4" cy="4" r="3.5" stroke="#9A9DA3" />
+                        </svg>
+                        <h2>Зал</h2>
+                      </a>
+                      <a href="#" class="category">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="8"
+                          height="8"
+                          viewBox="0 0 8 8"
+                          fill="none"
+                        >
+                          <circle cx="4" cy="4" r="3.5" stroke="#9A9DA3" />
+                        </svg>
+                        <h2>Спальня</h2>
+                      </a>
+                      <a href="#" class="category">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="8"
+                          height="8"
+                          viewBox="0 0 8 8"
+                          fill="none"
+                        >
+                          <circle cx="4" cy="4" r="3.5" stroke="#9A9DA3" />
+                        </svg>
+                        <h2>Ванная</h2>
+                      </a>
+                      <a href="#" class="category">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="8"
+                          height="8"
+                          viewBox="0 0 8 8"
+                          fill="none"
+                        >
+                          <circle cx="4" cy="4" r="3.5" stroke="#9A9DA3" />
+                        </svg>
+                        <h2>Кухня</h2>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="second">
+              <div class="item">
+                <div class="img-wrapper">
+                  <div class="swiper swiper-grid swiper-1" data-id="1">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="src/img/card-1.jpg" alt="c-1" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="src/img/card-2.jpg" alt="c-1" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="src/img/card-3.jpg" alt="c-1" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination swiper-pagination-1"></div>
+                </div>
+                <div class="info-item">
+                  <a href="#"><h3>Название модели стула</h3></a>
+                  <div class="price">
+                    <h2>100 000 тг</h2>
+                    <a class="custom-btn hidden-btn" href="#">Оформить заказ</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="img-wrapper">
+                  <div class="swiper swiper-grid swiper-2" data-id="2">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="src/img/card-1.jpg" alt="c-1" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="src/img/card-2.jpg" alt="c-1" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="src/img/card-3.jpg" alt="c-1" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination swiper-pagination-2"></div>
+                </div>
+                <div class="info-item">
+                  <a href="#"><h3>Название модели стула</h3></a>
+                  <div class="price">
+                    <h2>100 000 тг</h2>
+                    <a class="custom-btn hidden-btn" href="#">Оформить заказ</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="img-wrapper">
+                  <div class="swiper swiper-grid swiper-3" data-id="3">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="src/img/card-1.jpg" alt="c-1" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="src/img/card-2.jpg" alt="c-1" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="src/img/card-3.jpg" alt="c-1" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination swiper-pagination-3"></div>
+                </div>
+                <div class="info-item">
+                  <a href="#"><h3>Название модели стула</h3></a>
+                  <div class="price">
+                    <h2>100 000 тг</h2>
+                    <a class="custom-btn hidden-btn" href="#">Оформить заказ</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="img-wrapper">
+                  <div class="swiper swiper-grid swiper-4" data-id="4">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="src/img/card-1.jpg" alt="c-1" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="src/img/card-2.jpg" alt="c-1" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="src/img/card-3.jpg" alt="c-1" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination swiper-pagination-4"></div>
+                </div>
+                <div class="info-item">
+                  <a href="#"><h3>Название модели стула</h3></a>
+                  <div class="price">
+                    <h2>100 000 тг</h2>
+                    <a class="custom-btn hidden-btn" href="#">Оформить заказ</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="img-wrapper">
+                  <div class="swiper swiper-grid swiper-5" data-id="5">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="src/img/card-1.jpg" alt="c-1" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="src/img/card-2.jpg" alt="c-1" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="src/img/card-3.jpg" alt="c-1" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination swiper-pagination-5"></div>
+                </div>
+                <div class="info-item">
+                  <a href="#"><h3>Название модели стула</h3></a>
+                  <div class="price">
+                    <h2>100 000 тг</h2>
+                    <a class="custom-btn hidden-btn" href="#">Оформить заказ</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="img-wrapper">
+                  <div class="swiper swiper-grid swiper-6" data-id="6">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="src/img/card-1.jpg" alt="c-1" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="src/img/card-2.jpg" alt="c-1" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="src/img/card-3.jpg" alt="c-1" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination swiper-pagination-6"></div>
+                </div>
+                <div class="info-item">
+                  <a href="#"><h3>Название модели стула</h3></a>
+                  <div class="price">
+                    <h2>100 000 тг</h2>
+                    <a class="custom-btn hidden-btn" href="#">Оформить заказ</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="img-wrapper">
+                  <div class="swiper swiper-grid swiper-7" data-id="7">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="src/img/card-1.jpg" alt="c-1" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="src/img/card-2.jpg" alt="c-1" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="src/img/card-3.jpg" alt="c-1" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination swiper-pagination-7"></div>
+                </div>
+                <div class="info-item">
+                  <a href="#"><h3>Название модели стула</h3></a>
+                  <div class="price">
+                    <h2>100 000 тг</h2>
+                    <a class="custom-btn hidden-btn" href="#">Оформить заказ</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="img-wrapper">
+                  <div class="swiper swiper-grid swiper-8" data-id="8">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="src/img/card-1.jpg" alt="c-1" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="src/img/card-2.jpg" alt="c-1" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="src/img/card-3.jpg" alt="c-1" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination swiper-pagination-8"></div>
+                </div>
+                <div class="info-item">
+                  <a href="#"><h3>Название модели стула</h3></a>
+                  <div class="price">
+                    <h2>100 000 тг</h2>
+                    <a class="custom-btn hidden-btn" href="#">Оформить заказ</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="img-wrapper">
+                  <div class="swiper swiper-grid swiper-9" data-id="9">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="src/img/card-1.jpg" alt="c-1" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="src/img/card-2.jpg" alt="c-1" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="src/img/card-3.jpg" alt="c-1" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination swiper-pagination-9"></div>
+                </div>
+                <div class="info-item">
+                  <a href="#"><h3>Название модели стула</h3></a>
+                  <div class="price">
+                    <h2>100 000 тг</h2>
+                    <a class="custom-btn hidden-btn" href="#">Оформить заказ</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="img-wrapper">
+                  <div class="swiper swiper-grid swiper-10" data-id="10">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="src/img/card-1.jpg" alt="c-1" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="src/img/card-2.jpg" alt="c-1" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="src/img/card-3.jpg" alt="c-1" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination swiper-pagination-10"></div>
+                </div>
+                <div class="info-item">
+                  <a href="#"><h3>Название модели стула</h3></a>
+                  <div class="price">
+                    <h2>100 000 тг</h2>
+                    <a class="custom-btn hidden-btn" href="#">Оформить заказ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--! footer starts  -->
+    <footer id="footer">
+      <div class="cont foot-cont">
+        <div class="logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="121"
+            height="32"
+            viewBox="0 0 121 32"
+            fill="none"
+          >
+            <mask
+              id="mask0_2234_205"
+              style="mask-type: luminance"
+              maskUnits="userSpaceOnUse"
+              x="0"
+              y="0"
+              width="64"
+              height="32"
+            >
+              <path d="M64 0H0V32H64V0Z" fill="white" />
+            </mask>
+            <g mask="url(#mask0_2234_205)">
+              <path d="M64 -15.9712H0V48.0288H64V-15.9712Z" fill="black" />
+            </g>
+            <path
+              d="M17.7586 24.3317C17.2973 24.3893 16.7207 24.3893 16.2018 24.3893H12.3964V18.3353H15.9712C16.5478 18.3353 17.0667 18.3353 17.6433 18.3929C19.2 18.5082 20.4108 19.4308 20.4108 21.3911C20.4108 23.1785 19.1423 24.2163 17.7586 24.3317ZM12.3387 8.87942H15.5099C16.0865 8.87942 16.7207 8.93708 17.182 8.99473C18.6234 9.22536 19.546 9.97491 19.546 11.5893C19.546 13.2037 18.7387 14.0109 17.2396 14.2416C16.7784 14.2992 16.2018 14.3569 15.6252 14.3569H12.3387V8.87942ZM21.6216 15.683C24.0433 14.8758 25.2541 13.2037 25.2541 10.8398C25.2541 7.61095 23.0054 5.24698 19.1423 4.78572C17.9315 4.67041 17.2973 4.67041 16.0288 4.67041H6.86127V28.7136H15.9712C17.4126 28.7136 18.2198 28.7137 19.373 28.5983C22.6018 28.1947 26.1189 26.0037 26.1189 21.5064C26.1189 18.4506 24.6775 16.4902 21.6216 15.683Z"
+              fill="white"
+            />
+            <path
+              d="M39.3225 25.0811C35.3441 25.0811 32.8648 21.9676 32.8648 16.6054C32.8648 11.1856 35.2864 8.12975 39.3225 8.12975C43.3008 8.12975 45.7225 11.1856 45.7225 16.6054C45.7225 22.0252 43.3008 25.0811 39.3225 25.0811ZM39.3225 4.15137C31.8846 4.15137 27.2144 9.05227 27.2144 16.6631C27.2144 24.2739 31.827 29.1748 39.3225 29.1748C46.7603 29.1748 51.3729 24.2739 51.3729 16.6631C51.3729 8.99462 46.7603 4.15137 39.3225 4.15137Z"
+              fill="white"
+            />
+            <path
+              d="M59.0991 15.2218V8.87942H62.1549C62.9045 8.87942 63.5387 8.93707 64 8.93707C65.7874 9.1677 67.0558 9.8596 67.0558 12.0506C67.0558 14.2416 65.5567 14.9911 63.7694 15.1641C63.3081 15.2218 62.6739 15.2218 61.9243 15.2218H59.0991ZM71.6108 22.7173C71.3225 19.9497 70.4 17.9893 67.9784 17.1245C71.0342 16.2596 72.7639 14.2416 72.7639 11.1857C72.7639 6.97672 69.8811 5.24699 66.4216 4.84338C65.1531 4.72807 64.2306 4.67041 62.7892 4.67041H53.6793V28.7136H59.1567V19.2001H61.2901C61.9243 19.2001 62.5585 19.2001 63.1928 19.2578C64.9802 19.3731 66.018 20.9299 66.3063 23.5245C66.5369 25.5425 66.8829 26.9839 67.4594 28.656H73.3982C72.418 27.2722 71.9567 25.5425 71.6108 22.7173Z"
+              fill="white"
+            />
+            <path
+              d="M94.9622 24.6198H82.3351L94.7892 9.10989V4.90088H76.627V9.16755H88.2739L75.6469 24.7928V28.9441H94.9622V24.6198Z"
+              fill="#BD8D44"
+            />
+            <path
+              d="M108.108 25.3694C104.13 25.3694 101.65 22.2559 101.65 16.8938C101.65 11.4739 104.072 8.41808 108.108 8.41808C112.086 8.41808 114.508 11.4739 114.508 16.8938C114.508 22.2559 112.086 25.3694 108.108 25.3694ZM108.108 4.4397C100.67 4.4397 96 9.3406 96 16.9514C96 24.5622 100.613 29.4631 108.108 29.4631C115.546 29.4631 120.159 24.5622 120.159 16.9514C120.159 9.28295 115.488 4.4397 108.108 4.4397Z"
+              fill="#BD8D44"
+            />
+          </svg>
+        </div>
+        <div class="last">
+          <a class="polit" href="#">Политика конфиденциальности</a>
+          <a href="https://www.factum.agency" noindex nofollow
+            >Сделано в FACTUM</a
+          >
+        </div>
+      </div>
+    </footer>
+    <!--! footer ends  -->
+
+    <!--* modal window  -->
+    <div
+      class="modal fade"
+      id="callMe"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <a class="close" data-dismiss="modal" aria-label="Close">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 13.4143L17.6568 19.0711C18.0473 19.4617 18.6805 19.4617 19.071 19.0711C19.4615 18.6806 19.4615 18.0474 19.071 17.6569L13.4142 12.0001L19.071 6.34323C19.4615 5.9527 19.4615 5.31954 19.071 4.92901C18.6805 4.53849 18.0473 4.53849 17.6568 4.92901L12 10.5859L6.34309 4.929C5.95257 4.53848 5.3194 4.53848 4.92888 4.929C4.53836 5.31953 4.53836 5.95269 4.92888 6.34322L10.5857 12.0001L4.92888 17.6569C4.53836 18.0475 4.53836 18.6806 4.92888 19.0711C5.3194 19.4617 5.95257 19.4617 6.34309 19.0711L12 13.4143Z"
+                  fill="#222222"
+                />
+              </svg>
+            </a>
+            <div class="heading">
+              <h1>Оставить заявку</h1>
+            </div>
+            <form>
+              <input type="text" id="name" placeholder="Имя *" />
+              <input type="text" id="city" placeholder="Город*" />
+              <input type="email" id="email" placeholder="Email*" />
+              <input type="tel" id="tel-number" placeholder="Номер телефона" />
+              <textarea
+                name="comment"
+                id="comment"
+                cols="30"
+                rows="10"
+                placeholder="Комментарий"
+              ></textarea>
+              <input type="submit" id="modal-btn" value="Отправить" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="lightbox/js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <!-- <script src="js/jquery-3.7.1.min.js"></script> -->
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <!-- <script src="js/jquery-3.2.1.slim.min.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/tilt.jquery.js"></script>
+    <script src="js/maskedinput.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <!-- <script src="js/animation.js"></script> -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="lightbox/js/lightbox.js"></script>
+    <script src="js/custom-swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/tabby/dist/js/tabby.polyfills.min.js"></script>
+    <script src="js/preloader.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

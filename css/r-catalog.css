@@ -1,0 +1,250 @@
+@import url("../src/fonts/Gilroy/stylesheet.css");
+@media all and (max-width: 768px) {
+  .catalog {
+    padding: 100px 0 40px;
+  }
+  .catalog .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .catalog .heading .view {
+    display: flex;
+    gap: 8px;
+  }
+  .catalog .heading .view p {
+    font-size: 14px;
+    color: #000000;
+    line-height: 25px;
+    font-weight: 400;
+  }
+  .catalog .heading .view a:focus svg rect {
+    fill: #bd8d44;
+  }
+  .catalog .heading .view a svg rect {
+    fill: #513520;
+  }
+  .catalog .heading .left {
+    gap: 8px;
+    margin-bottom: 0;
+  }
+  .catalog .heading .line {
+    width: 32px;
+    height: 2px;
+  }
+  .catalog .heading h1 {
+    font-size: 19px;
+    color: #000000;
+    line-height: 32px;
+    font-weight: 700;
+    color: #141515;
+  }
+  .catalog .big-wrapper {
+    display: flex;
+    gap: 123px;
+    width: 100%;
+  }
+  .catalog .big-wrapper .filter-category {
+    display: none;
+  }
+  .catalog .big-wrapper .sort {
+    width: 100%;
+  }
+  .catalog .big-wrapper .sort .first {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: none;
+    padding-bottom: 12px;
+    width: 100%;
+  }
+  .catalog .big-wrapper .sort .first .left {
+    display: none;
+  }
+  .catalog .big-wrapper .sort .first .view {
+    display: none;
+  }
+  .catalog .big-wrapper .sort .first .filter-mobile {
+    display: block;
+    width: 100%;
+    border: 1px solid #9a9da3;
+    border-radius: 10px;
+    height: 100%;
+    padding: 12px 16px;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+  .catalog .big-wrapper .sort .first .filter-mobile .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
+    margin-bottom: 0px;
+  }
+  .catalog .big-wrapper .sort .first .filter-mobile .main h3 {
+    font-size: 13px;
+    color: #000000;
+    line-height: 20px;
+    font-weight: 700;
+    margin: 0;
+  }
+  .catalog .big-wrapper .sort .first .filter-mobile .main svg {
+    transform: rotate(0);
+    transition: all 0.3s;
+  }
+  .catalog .big-wrapper .sort .first .filter-mobile .main.active {
+    margin-bottom: 20px;
+    transition: all 0.3s;
+  }
+  .catalog .big-wrapper .sort .first .filter-mobile .main.active svg {
+    transform: rotate(180deg);
+    transition: all 0.3s;
+  }
+  .catalog .big-wrapper .sort .first .filter-mobile .inners {
+    display: none;
+  }
+  .catalog .big-wrapper .sort .first .filter-mobile .inners .room {
+    transition: all 0.3s;
+  }
+  .catalog .big-wrapper .sort .first .filter-mobile .inners .room svg {
+    transition: all 0.3s;
+    transform: rotate(0);
+  }
+  .catalog .big-wrapper .sort .first .filter-mobile .inners .room.active svg {
+    transform: rotate(180deg);
+    transition: all 0.3s;
+  }
+  .catalog .big-wrapper .sort .first .filter-mobile .inners .heading {
+    transition: all 0.3s;
+    margin-bottom: 0px;
+    justify-content: start;
+    gap: 8px;
+  }
+  .catalog .big-wrapper .sort .first .filter-mobile .inners .heading h2 {
+    font-size: 13px;
+    color: #000000;
+    line-height: 20px;
+    font-weight: 400;
+    margin: 0;
+    color: #141515;
+  }
+  .catalog .big-wrapper .sort .first .filter-mobile .inners .categories {
+    display: none;
+    margin-bottom: 10px;
+  }
+  .catalog .big-wrapper .sort .first .filter-mobile .inners .categories .category {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  .catalog .big-wrapper .sort .first .filter-mobile .inners .categories .category h2 {
+    font-size: 13px;
+    color: #000000;
+    line-height: 20px;
+    font-weight: 400;
+    margin: 0;
+  }
+  .catalog .big-wrapper .sort .first .filter-mobile .inners .categories .category:focus svg circle {
+    fill: #513520;
+  }
+  .catalog .big-wrapper .sort .second {
+    margin-top: 16px;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .catalog .big-wrapper .sort .second .item {
+    border-radius: 10px;
+    max-width: 100%;
+  }
+  .catalog .big-wrapper .sort .second .item .img-wrapper {
+    height: 100%;
+    max-width: 100%;
+  }
+  .catalog .big-wrapper .sort .second .item .img-wrapper .swiper-pagination {
+    transition: all 0.5s;
+    bottom: 1px;
+  }
+  .catalog .big-wrapper .sort .second .item .img-wrapper .swiper {
+    max-width: 100%;
+    height: 100%;
+  }
+  .catalog .big-wrapper .sort .second .item .info-item {
+    padding: 10px 5px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .catalog .big-wrapper .sort .second .item .info-item h3 {
+    font-size: 13px;
+    color: #000000;
+    line-height: 20px;
+    font-weight: 400;
+    color: #141515;
+  }
+  .catalog .big-wrapper .sort .second .item .info-item .price h2 {
+    margin: 0;
+    font-size: 13px;
+    color: #000000;
+    line-height: 20px;
+    font-weight: 700;
+    color: #141515;
+  }
+  .catalog .big-wrapper .sort .second .item .info-item .price .hidden-btn {
+    padding: 8px 40px;
+  }
+  .catalog .big-wrapper .sort .second.list-style {
+    gap: 12px;
+  }
+  .catalog .big-wrapper .sort .second.list-style .item {
+    flex-direction: row;
+    transition: all 0.5s;
+    max-width: 100%;
+  }
+  .catalog .big-wrapper .sort .second.list-style .item .img-wrapper {
+    height: 120px;
+    transition: all 0.5s;
+    max-width: 120px;
+  }
+  .catalog .big-wrapper .sort .second.list-style .item .img-wrapper .swiper-pagination {
+    transition: all 0.5s;
+    bottom: 0px;
+  }
+  .catalog .big-wrapper .sort .second.list-style .item .info-item {
+    padding: 16px 12px;
+    align-items: end;
+  }
+  .catalog .big-wrapper .sort .second.list-style .item .info-item h3 {
+    font-size: 13px;
+    color: #000000;
+    line-height: 20px;
+    font-weight: 400;
+    color: #141515;
+  }
+  .catalog .big-wrapper .sort .second.list-style .item .info-item .price {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    transition: all 0.5s;
+    align-items: end;
+  }
+  .catalog .big-wrapper .sort .second.list-style .item .info-item .price h2 {
+    font-size: 13px;
+    color: #000000;
+    line-height: 20px;
+    font-weight: 700;
+    color: #141515;
+  }
+  .catalog .big-wrapper .sort .second.list-style .item .info-item .price .hidden-btn {
+    transition: all 0.5s;
+    display: block;
+    font-size: 13px;
+    color: #000000;
+    line-height: 20px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+}
+@media all and (max-width: 360px) {
+  .catalog .big-wrapper .sort .second.list-style .item .info-item .price .hidden-btn {
+    padding: 8px 15px;
+  }
+}/*# sourceMappingURL=r-catalog.css.map */
