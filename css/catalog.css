@@ -153,6 +153,21 @@
   width: 100%;
   transition: all 0.5s;
   max-width: 338px;
+  position: relative;
+}
+.catalog .big-wrapper .sort .second .item .like {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 10;
+  background-color: white;
+  border-radius: 50%;
+  display: inline;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .catalog .big-wrapper .sort .second .item .img-wrapper {
   height: 336px;

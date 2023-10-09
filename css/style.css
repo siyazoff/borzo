@@ -299,7 +299,7 @@ header .menu.non-active {
   transition: all 0.3s;
 }
 header .search-phone {
-  width: 18%;
+  width: 26%;
   display: flex;
   justify-content: end;
   gap: 20px;
@@ -324,6 +324,26 @@ header .search-phone .search svg {
   width: 100%;
   height: 100%;
 }
+header .search-phone .favourites a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: #9a9da3;
+  border-radius: 50%;
+  padding: 8px;
+}
+header .search-phone .basket a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: #9a9da3;
+  border-radius: 50%;
+  padding: 8px;
+}
 header .search-phone .phone a {
   display: flex;
   gap: 12px;
@@ -343,7 +363,7 @@ header .search-phone .phone a p {
 header .search-phone .search-div {
   position: absolute;
   top: 1px;
-  right: 164px;
+  right: 265px;
   content: "";
 }
 header .search-phone .search-div .search-section form input {
@@ -360,7 +380,7 @@ header .search-phone .search-div .search-section form input {
 header .search-phone.active .search-div {
   position: absolute;
   top: 0;
-  right: 164px;
+  right: 265px;
   content: "";
 }
 header .search-phone.active .search-div .search-section form input {
