@@ -12,3 +12,139 @@ $lightgray: #dfdfdf;
   line-height: $lineHeight;
   font-weight: $fontWeight;
 }
+
+.product {
+  padding: 144px 0 100px;
+  background-color: #fffdf8;
+  position: relative;
+
+  .cont {
+    display: flex;
+    gap: 36px;
+  }
+
+  .mobile-wrapper {
+    display: none;
+  }
+
+  .big-wrapper-gallery {
+    display: flex;
+    gap: 16px;
+    max-width: 545px;
+    width: 100%;
+    flex-shrink: 0;
+    margin-left: 72px;
+
+    .gallery-left {
+      max-width: 96px;
+      width: 100%;
+      height: 448px;
+
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        border-radius: 15px;
+        opacity: 0.4;
+      }
+
+      .swiper-slide-thumb-active {
+        opacity: 1;
+        transition: all 0.6s;
+      }
+    }
+
+    .gallery-right {
+      max-width: 433px;
+      width: 100%;
+
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        height: 448px;
+        border-radius: 15px;
+      }
+    }
+  }
+
+  .name-btn-wrapper {
+    max-width: 571px;
+    width: 100%;
+
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h1 {
+        margin: 0;
+        @include font(24px, 32px, 700);
+        color: #141515;
+      }
+
+      h2 {
+        margin: 0;
+        @include font(20px, 24px, 700);
+        color: #141515;
+      }
+    }
+
+    .desc {
+      margin-top: 12px;
+
+      p {
+        @include font(15px, 24px, 400);
+        color: #141515;
+      }
+    }
+
+    .custom-btn {
+      @include font(15px, 24px, 700);
+      color: #434443;
+      margin-top: 20px;
+    }
+
+    .specifications {
+      margin-top: 32px;
+
+      h3 {
+        @include font(17px, 28px, 700);
+        margin: 0;
+      }
+
+      .inner {
+        margin-top: 12px;
+        display: flex;
+        gap: 42px;
+
+        ul {
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+
+          li {
+            @include font(15px, 24px, 400);
+          }
+        }
+
+        ul.right {
+          li {
+            @include font(15px, 24px, 700);
+          }
+        }
+      }
+    }
+  }
+}
+
+.product_catalog {
+  padding: 0 0 72px;
+
+  .big-wrapper {
+    .sort {
+      .second {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 // let tl = gsap.timeline();
 
 // tl.to("body", {
-//   overflow: "hidden",
+//   overflow: "inherit",
 // })
 //   .to(".preloader .text-container", {
 //     duration: 0,
@@ -32,7 +32,7 @@
 //   .to(
 //     "body",
 //     {
-//       overflow: "inherit",
+//       overflow: "unset",
 //     },
 //     "-=2"
 //   )

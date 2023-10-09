@@ -73,4 +73,9 @@ $(document).ready(function () {
 
   $("input[id='tel']").mask("+7 (999) 999-99-99");
   $("input[id='tel-number']").mask("+7 (999) 999-99-99");
+
+  $(".grid-masonry").masonry({
+    itemSelector: ".item",
+    gutter: 28,
+  });
 });

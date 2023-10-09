@@ -1,0 +1,52 @@
+@import url("../src/fonts/Gilroy/stylesheet.css");
+
+$gilroy: "Gilroy";
+$gold: #bd8d44;
+$gray: #343434;
+$black: #000000;
+$lightgray: #dfdfdf;
+
+@mixin font($titleVal, $lineHeight, $fontWeight) {
+  font-size: $titleVal;
+  color: $black;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+}
+
+.bout {
+  height: 90vh;
+  background: linear-gradient(
+      0deg,
+      #fffdf8 0%,
+      rgba(255, 253, 248, 0.95) 23.18%,
+      rgba(255, 253, 248, 0.59) 39.03%,
+      rgba(255, 253, 248, 0) 51.37%
+    ),
+    url("../src/img/bout_bg.jpeg"), lightgray 50% / cover no-repeat;
+  background-position: 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+.bout_about {
+  background-color: #fffdf8;
+  padding: 0 0 72px;
+
+  .desc-2 {
+    margin-top: 0;
+    display: flex;
+    gap: 20px;
+
+    p {
+      max-width: 638px;
+      column-count: 1;
+    }
+  }
+}

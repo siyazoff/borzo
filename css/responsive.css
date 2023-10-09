@@ -486,4 +486,54 @@
     font-weight: 700;
     color: #fffdf8;
   }
+  .contacts_page {
+    padding: 108px 0 40px;
+  }
+  .reviews {
+    padding: 150px 0 40px;
+  }
+  .reviews .heading {
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  .reviews .heading .line {
+    width: 32px;
+    height: 2px;
+  }
+  .reviews .heading h1 {
+    font-size: 19px;
+    color: #000000;
+    line-height: 32px;
+    font-weight: 700;
+    color: #141515;
+  }
+  .reviews .grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .reviews .grid .item {
+    padding: 16px;
+    max-width: 100%;
+    margin-bottom: 12px;
+  }
+  .reviews .grid .item .comment p {
+    font-size: 13px;
+    color: #000000;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  .thx {
+    height: 100vh;
+  }
+  .thx .cont h1 {
+    font-size: 28px;
+    color: #000000;
+    line-height: 32px;
+    font-weight: 700;
+    margin: 0;
+    color: #141515;
+  }
+  .thx .cont a {
+    margin-top: 40px;
+  }
 }/*# sourceMappingURL=responsive.css.map */

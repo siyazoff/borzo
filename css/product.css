@@ -1,1 +1,129 @@
-@import url("../src/fonts/Gilroy/stylesheet.css");/*# sourceMappingURL=product.css.map */
+@import url("../src/fonts/Gilroy/stylesheet.css");
+.product {
+  padding: 144px 0 100px;
+  background-color: #fffdf8;
+  position: relative;
+}
+.product .cont {
+  display: flex;
+  gap: 36px;
+}
+.product .mobile-wrapper {
+  display: none;
+}
+.product .big-wrapper-gallery {
+  display: flex;
+  gap: 16px;
+  max-width: 545px;
+  width: 100%;
+  flex-shrink: 0;
+  margin-left: 72px;
+}
+.product .big-wrapper-gallery .gallery-left {
+  max-width: 96px;
+  width: 100%;
+  height: 448px;
+}
+.product .big-wrapper-gallery .gallery-left .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  opacity: 0.4;
+}
+.product .big-wrapper-gallery .gallery-left .swiper-slide-thumb-active {
+  opacity: 1;
+  transition: all 0.6s;
+}
+.product .big-wrapper-gallery .gallery-right {
+  max-width: 433px;
+  width: 100%;
+}
+.product .big-wrapper-gallery .gallery-right .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  height: 448px;
+  border-radius: 15px;
+}
+.product .name-btn-wrapper {
+  max-width: 571px;
+  width: 100%;
+}
+.product .name-btn-wrapper .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product .name-btn-wrapper .heading h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #000000;
+  line-height: 32px;
+  font-weight: 700;
+  color: #141515;
+}
+.product .name-btn-wrapper .heading h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #000000;
+  line-height: 24px;
+  font-weight: 700;
+  color: #141515;
+}
+.product .name-btn-wrapper .desc {
+  margin-top: 12px;
+}
+.product .name-btn-wrapper .desc p {
+  font-size: 15px;
+  color: #000000;
+  line-height: 24px;
+  font-weight: 400;
+  color: #141515;
+}
+.product .name-btn-wrapper .custom-btn {
+  font-size: 15px;
+  color: #000000;
+  line-height: 24px;
+  font-weight: 700;
+  color: #434443;
+  margin-top: 20px;
+}
+.product .name-btn-wrapper .specifications {
+  margin-top: 32px;
+}
+.product .name-btn-wrapper .specifications h3 {
+  font-size: 17px;
+  color: #000000;
+  line-height: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+.product .name-btn-wrapper .specifications .inner {
+  margin-top: 12px;
+  display: flex;
+  gap: 42px;
+}
+.product .name-btn-wrapper .specifications .inner ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.product .name-btn-wrapper .specifications .inner ul li {
+  font-size: 15px;
+  color: #000000;
+  line-height: 24px;
+  font-weight: 400;
+}
+.product .name-btn-wrapper .specifications .inner ul.right li {
+  font-size: 15px;
+  color: #000000;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.product_catalog {
+  padding: 0 0 72px;
+}
+.product_catalog .big-wrapper .sort .second {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}/*# sourceMappingURL=product.css.map */

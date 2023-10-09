@@ -1,0 +1,9 @@
+@import url("../src/fonts/Gilroy/stylesheet.css");
+@media all and (max-width: 768px) {
+  .bout svg {
+    width: 241px;
+  }
+  .bout_about {
+    padding: 0 0 40px;
+  }
+}/*# sourceMappingURL=r-bout.css.map */

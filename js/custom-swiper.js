@@ -78,3 +78,21 @@ const allSliders = document.querySelectorAll(".swiper-grid");
 
 // Loop over all of the fetched sliders and apply Swiper on each one.
 allSliders.forEach((slider) => buildSwiperSlider(slider));
+
+const galleryLeft = new Swiper(".gallery-left", {
+  spaceBetween: 16,
+  slidesPerView: 4,
+  loop: false,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+  direction: "vertical",
+});
+const galleryRight = new Swiper(".gallery-right", {
+  spaceBetween: 10,
+  loop: false,
+  grabCursor: true,
+
+  thumbs: {
+    swiper: galleryLeft,
+  },
+});

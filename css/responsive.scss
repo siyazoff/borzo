@@ -565,4 +565,60 @@ $lightgray: #dfdfdf;
       }
     }
   }
+
+  .contacts_page {
+    padding: 108px 0 40px;
+  }
+
+  .reviews {
+    padding: 150px 0 40px;
+
+    .heading {
+      gap: 8px;
+      margin-bottom: 12px;
+
+      .line {
+        width: 32px;
+        height: 2px;
+      }
+
+      h1 {
+        @include font(19px, 32px, 700);
+        color: #141515;
+      }
+    }
+
+    .grid {
+      grid-template-columns: 1fr;
+      gap: 12px;
+
+      .item {
+        padding: 16px;
+        max-width: 100%;
+        margin-bottom: 12px;
+
+        .comment {
+          p {
+            @include font(13px, 20px, 400);
+          }
+        }
+      }
+    }
+  }
+
+  .thx {
+    height: 100vh;
+
+    .cont {
+      h1 {
+        @include font(28px, 32px, 700);
+        margin: 0;
+        color: #141515;
+      }
+
+      a {
+        margin-top: 40px;
+      }
+    }
+  }
 }

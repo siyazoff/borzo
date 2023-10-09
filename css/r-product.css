@@ -1,1 +1,116 @@
-@import url("../src/fonts/Gilroy/stylesheet.css");/*# sourceMappingURL=r-product.css.map */
+@import url("../src/fonts/Gilroy/stylesheet.css");
+@media all and (max-width: 768px) {
+  .product {
+    padding: 120px 0 52px;
+  }
+  .product .cont {
+    gap: 28px;
+    flex-direction: column;
+  }
+  .product .big-wrapper-gallery {
+    gap: 9px;
+    max-width: 100%;
+    margin-left: 0;
+  }
+  .product .big-wrapper-gallery .gallery-left {
+    max-width: 17.7%;
+    width: 100%;
+    height: 300px;
+  }
+  .product .big-wrapper-gallery .gallery-left .swiper-slide {
+    border-radius: 10px;
+  }
+  .product .big-wrapper-gallery .gallery-right {
+    max-width: 82.3%;
+    width: 100%;
+  }
+  .product .big-wrapper-gallery .gallery-right .swiper-slide {
+    height: 300px;
+    border-radius: 10px;
+  }
+  .product .name-btn-wrapper {
+    max-width: 100%;
+  }
+  .product .name-btn-wrapper .heading {
+    display: none;
+  }
+  .product .name-btn-wrapper .desc {
+    display: none;
+  }
+  .product .name-btn-wrapper .custom-btn {
+    display: none;
+  }
+  .product .name-btn-wrapper .specifications {
+    margin-top: 0px;
+  }
+  .product .name-btn-wrapper .specifications h3 {
+    font-size: 15px;
+    color: #000000;
+    line-height: 24px;
+    font-weight: 700;
+    margin: 0;
+    color: #141515;
+  }
+  .product .name-btn-wrapper .specifications .inner {
+    margin-top: 8px;
+    gap: 94px;
+  }
+  .product .name-btn-wrapper .specifications .inner ul {
+    gap: 8px;
+  }
+  .product .name-btn-wrapper .specifications .inner ul li {
+    font-size: 13px;
+    color: #000000;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  .product .name-btn-wrapper .specifications .inner ul.right li {
+    font-size: 13px;
+    color: #000000;
+    line-height: 20px;
+    font-weight: 700;
+  }
+  .product .mobile-wrapper {
+    display: block;
+  }
+  .product .mobile-wrapper .heading {
+    display: flex;
+  }
+  .product .mobile-wrapper .heading h1 {
+    font-size: 15px;
+    color: #000000;
+    line-height: 24px;
+    font-weight: 700;
+    color: #141515;
+  }
+  .product .mobile-wrapper .heading h2 {
+    font-size: 15px;
+    color: #000000;
+    line-height: 20px;
+    font-weight: 700;
+    color: #141515;
+  }
+  .product .mobile-wrapper .desc {
+    margin-top: 8px;
+    display: block;
+  }
+  .product .mobile-wrapper .desc p {
+    font-size: 13px;
+    color: #000000;
+    line-height: 20px;
+    font-weight: 400;
+    color: #141515;
+  }
+  .product .mobile-wrapper .custom-btn {
+    display: block;
+    text-align: center;
+    margin-top: 18px;
+    height: 48px;
+  }
+  .product_catalog {
+    padding: 0 0 40px;
+  }
+  .product_catalog .big-wrapper .sort .second {
+    grid-template-columns: 1fr 1fr;
+  }
+}/*# sourceMappingURL=r-product.css.map */
