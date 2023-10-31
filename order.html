@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="BORZO | Мебель под заказ" />
+    <meta
+      property="og:description"
+      content="Дизайнерская мебель под заказ в Астане"
+    />
+    <title>BORZO | Мебель под заказ</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/catalog.css" />
+    <link rel="stylesheet" href="./css/product.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/r-catalog.css" />
+    <link rel="stylesheet" href="./css/r-product.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/jquery-ui.css" />
+    <link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./css/aos.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./lightbox/css/lightbox.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/cferdinandi/tabby/dist/css/tabby-ui.min.css"
+    />
+
+    <!-- cdn css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- !header starts  -->
+    <header class="header" id="header">
+      <nav class="navbar">
+        <div class="cont">
+          <div class="navbar__wrap">
+            <div class="hamb">
+              <div class="hamb__field" id="hamb">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+            <div class="logo-menu">
+              <a href="\" class="logo" id="logo">
+                <!-- !logo starts -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="121"
+                  height="32"
+                  viewBox="0 0 121 32"
+                  fill="none"
+                >
+                  <mask
+                    id="mask0_2234_63"
+                    style="mask-type: luminance"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="64"
+                    height="32"
+                  >
+                    <path d="M64 0H0V32H64V0Z" fill="white" />
+                  </mask>
+                  <g mask="url(#mask0_2234_63)">
+                    <path
+                      d="M64 -15.9711H0V48.0289H64V-15.9711Z"
+                      fill="black"
+                    />
+                  </g>
+                  <path
+                    d="M17.7586 24.3315C17.2973 24.3892 16.7207 24.3892 16.2018 24.3892H12.3964V18.3351H15.9712C16.5478 18.3351 17.0667 18.3352 17.6433 18.3928C19.2 18.5081 20.4108 19.4306 20.4108 21.391C20.4108 23.1784 19.1423 24.2162 17.7586 24.3315ZM12.3387 8.8793H15.5099C16.0865 8.8793 16.7207 8.93695 17.182 8.99461C18.6234 9.22524 19.546 9.97479 19.546 11.5892C19.546 13.2036 18.7387 14.0108 17.2396 14.2415C16.7784 14.2991 16.2018 14.3568 15.6252 14.3568H12.3387V8.8793ZM21.6216 15.6829C24.0433 14.8757 25.2541 13.2036 25.2541 10.8397C25.2541 7.61083 23.0054 5.24686 19.1423 4.7856C17.9315 4.67029 17.2973 4.67029 16.0288 4.67029H6.86127V28.7135H15.9712C17.4126 28.7135 18.2198 28.7135 19.373 28.5982C22.6018 28.1946 26.1189 26.0036 26.1189 21.5063C26.1189 18.4505 24.6775 16.4901 21.6216 15.6829Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M39.3225 25.0811C35.3441 25.0811 32.8648 21.9676 32.8648 16.6054C32.8648 11.1856 35.2864 8.12975 39.3225 8.12975C43.3008 8.12975 45.7225 11.1856 45.7225 16.6054C45.7225 22.0252 43.3008 25.0811 39.3225 25.0811ZM39.3225 4.15137C31.8846 4.15137 27.2144 9.05227 27.2144 16.6631C27.2144 24.2739 31.827 29.1748 39.3225 29.1748C46.7603 29.1748 51.3729 24.2739 51.3729 16.6631C51.3729 8.99462 46.7603 4.15137 39.3225 4.15137Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M59.0991 15.2216V8.8793H62.1549C62.9045 8.8793 63.5387 8.93695 64 8.93695C65.7874 9.16758 67.0558 9.85948 67.0558 12.0505C67.0558 14.2415 65.5567 14.991 63.7694 15.164C63.3081 15.2216 62.6739 15.2216 61.9243 15.2216H59.0991ZM71.6108 22.7171C71.3225 19.9496 70.4 17.9892 67.9784 17.1243C71.0342 16.2595 72.7639 14.2415 72.7639 11.1856C72.7639 6.9766 69.8811 5.24687 66.4216 4.84326C65.1531 4.72795 64.2306 4.67029 62.7892 4.67029H53.6793V28.7135H59.1567V19.2H61.2901C61.9243 19.2 62.5585 19.2 63.1928 19.2577C64.9802 19.373 66.018 20.9297 66.3063 23.5243C66.5369 25.5424 66.8829 26.9838 67.4594 28.6559H73.3982C72.418 27.2721 71.9567 25.5424 71.6108 22.7171Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M94.9621 24.6198H82.3351L94.7892 9.10989V4.90088H76.627V9.16755H88.2738L75.6468 24.7928V28.9441H94.9621V24.6198Z"
+                    fill="#BD8D44"
+                  />
+                  <path
+                    d="M108.108 25.3693C104.13 25.3693 101.65 22.2558 101.65 16.8936C101.65 11.4738 104.072 8.41796 108.108 8.41796C112.086 8.41796 114.508 11.4738 114.508 16.8936C114.508 22.2558 112.086 25.3693 108.108 25.3693ZM108.108 4.43958C100.67 4.43958 96 9.34048 96 16.9513C96 24.5621 100.613 29.463 108.108 29.463C115.546 29.463 120.159 24.5621 120.159 16.9513C120.159 9.28282 115.488 4.43958 108.108 4.43958Z"
+                    fill="#BD8D44"
+                  />
+                </svg>
+                <!-- !logo ends -->
+              </a>
+              <ul class="menu" id="menu">
+                <li><a href="\">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li class="mobile-li">
+                  <a href="tel:+7 700 293 69 13">
+                    <div class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                      >
+                        <circle cx="16" cy="16" r="16" fill="#9A9DA3" />
+                        <path
+                          d="M20.82 18.1735L19.1267 17.9802C18.9276 17.9568 18.7258 17.9788 18.5364 18.0446C18.347 18.1105 18.175 18.2183 18.0334 18.3602L16.8067 19.5868C14.9142 18.6243 13.3759 17.086 12.4134 15.1935L13.6467 13.9602C13.9334 13.6735 14.0734 13.2735 14.0267 12.8668L13.8334 11.1868C13.7956 10.8616 13.6395 10.5617 13.3949 10.3441C13.1502 10.1265 12.8341 10.0064 12.5067 10.0068H11.3534C10.6 10.0068 9.97336 10.6335 10.02 11.3868C10.3734 17.0802 14.9267 21.6268 20.6134 21.9802C21.3667 22.0268 21.9934 21.4002 21.9934 20.6468V19.4935C22 18.8202 21.4934 18.2535 20.82 18.1735Z"
+                          fill="#F5F4F0"
+                        />
+                      </svg>
+                    </div>
+                    <p>+7 700 293 69 13</p>
+                  </a>
+                </li>
+              </ul>
+              <ul class="search-phone">
+                <li class="search" id="search-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                  >
+                    <path
+                      d="M7.33333 12.6667C10.2789 12.6667 12.6667 10.2789 12.6667 7.33333C12.6667 4.38781 10.2789 2 7.33333 2C4.38781 2 2 4.38781 2 7.33333C2 10.2789 4.38781 12.6667 7.33333 12.6667Z"
+                      stroke="#F5F4F0"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M14 14L11.1333 11.1333"
+                      stroke="#F5F4F0"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </li>
+                <div class="search-div">
+                  <div class="search-section">
+                    <form>
+                      <input
+                        type="text"
+                        id="search-input"
+                        class="search-input"
+                        placeholder="Поиск"
+                      />
+                    </form>
+                  </div>
+                </div>
+                <li class="favourites">
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M11.125 1.75C9.86938 1.75 8.755 2.24563 8 3.0975C7.245 2.24563 6.13062 1.75 4.875 1.75C3.78139 1.75132 2.73295 2.18635 1.95965 2.95965C1.18635 3.73295 0.751323 4.78139 0.75 5.875C0.75 10.3962 7.36312 14.0088 7.64437 14.1606C7.75367 14.2195 7.87586 14.2503 8 14.2503C8.12414 14.2503 8.24633 14.2195 8.35563 14.1606C8.63688 14.0088 15.25 10.3962 15.25 5.875C15.2487 4.78139 14.8137 3.73295 14.0404 2.95965C13.2671 2.18635 12.2186 1.75132 11.125 1.75ZM10.7819 10.6475C9.91142 11.3861 8.98091 12.0509 8 12.635C7.01909 12.0509 6.08858 11.3861 5.21812 10.6475C3.86375 9.48563 2.25 7.71375 2.25 5.875C2.25 5.17881 2.52656 4.51113 3.01884 4.01884C3.51113 3.52656 4.17881 3.25 4.875 3.25C5.9875 3.25 6.91875 3.8375 7.30562 4.78375C7.36193 4.92169 7.45805 5.03974 7.58172 5.12283C7.70539 5.20592 7.85101 5.2503 8 5.2503C8.14899 5.2503 8.29461 5.20592 8.41828 5.12283C8.54195 5.03974 8.63807 4.92169 8.69438 4.78375C9.08125 3.8375 10.0125 3.25 11.125 3.25C11.8212 3.25 12.4889 3.52656 12.9812 4.01884C13.4734 4.51113 13.75 5.17881 13.75 5.875C13.75 7.71375 12.1362 9.48563 10.7819 10.6475Z"
+                        fill="#F5F4F0"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="basket">
+                  <a href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_2445_769)">
+                        <path
+                          d="M10.486 2L12.7717 6M3.62885 6L5.91457 2M14.2346 6H2.166C1.99459 5.99653 1.8246 6.03167 1.66861 6.10281C1.51263 6.17395 1.37464 6.27928 1.26489 6.41098C1.15513 6.54269 1.07642 6.6974 1.03457 6.86366C0.992721 7.02991 0.988815 7.20346 1.02314 7.37143L2.28028 13.6571C2.33371 13.9192 2.47734 14.1542 2.68616 14.3212C2.89498 14.4883 3.15577 14.5768 3.42314 14.5714H12.9774C13.2448 14.5768 13.5056 14.4883 13.7144 14.3212C13.9232 14.1542 14.0669 13.9192 14.1203 13.6571L15.3774 7.37143C15.4117 7.20346 15.4078 7.02991 15.366 6.86366C15.3241 6.6974 15.2454 6.54269 15.1357 6.41098C15.0259 6.27928 14.8879 6.17395 14.732 6.10281C14.576 6.03167 14.406 5.99653 14.2346 6Z"
+                          stroke="#F5F4F0"
+                          stroke-width="1.71429"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_2445_769">
+                          <rect
+                            width="16"
+                            height="16"
+                            fill="white"
+                            transform="translate(-0.000976562)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+                <li class="phone">
+                  <a href="tel:+7 700 293 69 13">
+                    <div class="icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        class="with-search"
+                      >
+                        <circle cx="16" cy="16" r="16" fill="#9A9DA3" />
+                        <path
+                          d="M20.82 18.1735L19.1267 17.9802C18.9276 17.9568 18.7258 17.9788 18.5364 18.0446C18.347 18.1105 18.175 18.2183 18.0334 18.3602L16.8067 19.5868C14.9142 18.6243 13.3759 17.086 12.4134 15.1935L13.6467 13.9602C13.9334 13.6735 14.0734 13.2735 14.0267 12.8668L13.8334 11.1868C13.7956 10.8616 13.6395 10.5617 13.3949 10.3441C13.1502 10.1265 12.8341 10.0064 12.5067 10.0068H11.3534C10.6 10.0068 9.97336 10.6335 10.02 11.3868C10.3734 17.0802 14.9267 21.6268 20.6134 21.9802C21.3667 22.0268 21.9934 21.4002 21.9934 20.6468V19.4935C22 18.8202 21.4934 18.2535 20.82 18.1735Z"
+                          fill="#F5F4F0"
+                        />
+                      </svg>
+                    </div>
+                    <p>+7 700 293 69 13</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="popup" id="popup"></div>
+      </nav>
+    </header>
+    <!-- !header ends  -->
+
+    <!-- ! basket-section starts  -->
+    <section class="basket-section order">
+      <div class="cont">
+        <div class="heading">
+          <div class="line"></div>
+          <h1>Оформление заказа</h1>
+        </div>
+
+        <div class="big-wrapper">
+          <div class="order-side">
+            <div class="details">
+              <h2>Детали оплаты</h2>
+
+              <div class="grid">
+                <form>
+                  <div class="first">
+                    <input type="text" id="name" placeholder="Имя *" />
+                    <input type="text" id="surname" placeholder="Фамилия *" />
+                    <input type="text" id="city" placeholder="Город *" />
+                    <input type="text" id="street" placeholder="Улица *" />
+                    <input type="text" id="flat" placeholder="Квартира *" />
+                    <input type="tel" id="tel" placeholder="Телефон *" />
+                    <input
+                      type="email"
+                      id="email"
+                      placeholder="Email (не обязательно)"
+                    />
+                  </div>
+
+                  <div class="second">
+                    <h3>Примечание к заказу (необязательно)</h3>
+
+                    <textarea
+                      name="comment"
+                      id="comment"
+                      cols="30"
+                      rows="10"
+                      placeholder="Примечание к вашему заказу, например, особые пожелания отделу доставки."
+                    ></textarea>
+                  </div>
+
+                  <div class="price-side">
+                    <div class="receipt">
+                      <div class="name-price">
+                        <h3>Название позиции</h3>
+                        <p>100 000 тг</p>
+                      </div>
+                      <div class="name-price">
+                        <h3>Название позиции</h3>
+                        <p>100 000 тг</p>
+                      </div>
+                      <div class="total">
+                        <h3>Общаяя сумма</h3>
+                        <p>200 000 тг</p>
+                      </div>
+                      <a href="order.html" class="custom-btn"
+                        >Оформление заказа</a
+                      >
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ! basket-section ends -->
+
+    <!-- !footer starts  -->
+    <footer id="footer">
+      <div class="cont foot-cont">
+        <div class="logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="121"
+            height="32"
+            viewBox="0 0 121 32"
+            fill="none"
+          >
+            <mask
+              id="mask0_2234_205"
+              style="mask-type: luminance"
+              maskUnits="userSpaceOnUse"
+              x="0"
+              y="0"
+              width="64"
+              height="32"
+            >
+              <path d="M64 0H0V32H64V0Z" fill="white" />
+            </mask>
+            <g mask="url(#mask0_2234_205)">
+              <path d="M64 -15.9712H0V48.0288H64V-15.9712Z" fill="black" />
+            </g>
+            <path
+              d="M17.7586 24.3317C17.2973 24.3893 16.7207 24.3893 16.2018 24.3893H12.3964V18.3353H15.9712C16.5478 18.3353 17.0667 18.3353 17.6433 18.3929C19.2 18.5082 20.4108 19.4308 20.4108 21.3911C20.4108 23.1785 19.1423 24.2163 17.7586 24.3317ZM12.3387 8.87942H15.5099C16.0865 8.87942 16.7207 8.93708 17.182 8.99473C18.6234 9.22536 19.546 9.97491 19.546 11.5893C19.546 13.2037 18.7387 14.0109 17.2396 14.2416C16.7784 14.2992 16.2018 14.3569 15.6252 14.3569H12.3387V8.87942ZM21.6216 15.683C24.0433 14.8758 25.2541 13.2037 25.2541 10.8398C25.2541 7.61095 23.0054 5.24698 19.1423 4.78572C17.9315 4.67041 17.2973 4.67041 16.0288 4.67041H6.86127V28.7136H15.9712C17.4126 28.7136 18.2198 28.7137 19.373 28.5983C22.6018 28.1947 26.1189 26.0037 26.1189 21.5064C26.1189 18.4506 24.6775 16.4902 21.6216 15.683Z"
+              fill="white"
+            />
+            <path
+              d="M39.3225 25.0811C35.3441 25.0811 32.8648 21.9676 32.8648 16.6054C32.8648 11.1856 35.2864 8.12975 39.3225 8.12975C43.3008 8.12975 45.7225 11.1856 45.7225 16.6054C45.7225 22.0252 43.3008 25.0811 39.3225 25.0811ZM39.3225 4.15137C31.8846 4.15137 27.2144 9.05227 27.2144 16.6631C27.2144 24.2739 31.827 29.1748 39.3225 29.1748C46.7603 29.1748 51.3729 24.2739 51.3729 16.6631C51.3729 8.99462 46.7603 4.15137 39.3225 4.15137Z"
+              fill="white"
+            />
+            <path
+              d="M59.0991 15.2218V8.87942H62.1549C62.9045 8.87942 63.5387 8.93707 64 8.93707C65.7874 9.1677 67.0558 9.8596 67.0558 12.0506C67.0558 14.2416 65.5567 14.9911 63.7694 15.1641C63.3081 15.2218 62.6739 15.2218 61.9243 15.2218H59.0991ZM71.6108 22.7173C71.3225 19.9497 70.4 17.9893 67.9784 17.1245C71.0342 16.2596 72.7639 14.2416 72.7639 11.1857C72.7639 6.97672 69.8811 5.24699 66.4216 4.84338C65.1531 4.72807 64.2306 4.67041 62.7892 4.67041H53.6793V28.7136H59.1567V19.2001H61.2901C61.9243 19.2001 62.5585 19.2001 63.1928 19.2578C64.9802 19.3731 66.018 20.9299 66.3063 23.5245C66.5369 25.5425 66.8829 26.9839 67.4594 28.656H73.3982C72.418 27.2722 71.9567 25.5425 71.6108 22.7173Z"
+              fill="white"
+            />
+            <path
+              d="M94.9622 24.6198H82.3351L94.7892 9.10989V4.90088H76.627V9.16755H88.2739L75.6469 24.7928V28.9441H94.9622V24.6198Z"
+              fill="#BD8D44"
+            />
+            <path
+              d="M108.108 25.3694C104.13 25.3694 101.65 22.2559 101.65 16.8938C101.65 11.4739 104.072 8.41808 108.108 8.41808C112.086 8.41808 114.508 11.4739 114.508 16.8938C114.508 22.2559 112.086 25.3694 108.108 25.3694ZM108.108 4.4397C100.67 4.4397 96 9.3406 96 16.9514C96 24.5622 100.613 29.4631 108.108 29.4631C115.546 29.4631 120.159 24.5622 120.159 16.9514C120.159 9.28295 115.488 4.4397 108.108 4.4397Z"
+              fill="#BD8D44"
+            />
+          </svg>
+        </div>
+        <div class="last">
+          <a class="polit" href="#">Политика конфиденциальности</a>
+          <a href="https://www.factum.agency" noindex nofollow
+            >Сделано в FACTUM</a
+          >
+        </div>
+      </div>
+    </footer>
+    <!-- !footer ends  -->
+
+    <!--* modal window  -->
+    <div
+      class="modal fade"
+      id="callMe"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="heading">
+              <h1>Оставить заявку</h1>
+            </div>
+            <form>
+              <input type="text" id="name" placeholder="Имя" />
+              <input type="tel" id="tel-number" placeholder="Телефон" />
+              <input type="email" id="email" placeholder="Эл. почта" />
+              <input
+                type="submit"
+                id="modal-btn"
+                value="Бесплатная консультация"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="lightbox/js/lightbox-plus-jquery.min.js"></script>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/tilt.jquery.js"></script>
+    <script src="js/maskedinput.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/preloader.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="lightbox/js/lightbox.js"></script>
+    <script src="js/custom-swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/tabby/dist/js/tabby.polyfills.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 900,
+      });
+    </script>
+    <script>
+      var tabs = new Tabby("[data-tabs]");
+    </script>
+
+    <script>
+      $("#myModal").on("shown.bs.modal", function () {
+        $("#myInput").trigger("focus");
+      });
+    </script>
+    <script>
+      lightbox.option({
+        resizeDuration: 100,
+        wrapAround: true,
+      });
+    </script>
+  </body>
+</html>
