@@ -221,22 +221,31 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  display: flex;
+  // display: none;
   justify-content: center;
   align-items: center;
   background: url("../src/img/preloader_bg.jpg") no-repeat center center;
   overflow: hidden;
   z-index: 200;
+  height: 100vh;
+  transition: all 0.5s;
 }
+
+.preloader.show {
+  height: 0vh;
+  transition: all 0.5s;
+}
+
 .preloader .text-container {
   display: flex;
   flex-direction: column;
   gap: 2em;
   overflow: hidden;
   color: white;
-  opacity: 0;
+  opacity: 1;
   justify-content: center;
   align-items: center;
+  height: 100%;
 
   .item-preloader-3 {
     animation: rotate 2s linear infinite;
@@ -484,11 +493,13 @@ header {
 .home {
   position: relative;
   z-index: 1;
-  background: url(../src/img/main_bg.jpeg) no-repeat center center;
+  background: url(../src/img/main_bg.png) no-repeat center center;
   background-size: cover;
+  height: 96vh;
 
   .home-cont {
     display: flex;
+    height: 100%;
   }
 
   .banner {
@@ -497,7 +508,7 @@ header {
   }
 
   .wrapper-card {
-    margin-top: 268px;
+    margin-top: auto;
     margin-left: auto;
     margin-bottom: 172px;
 

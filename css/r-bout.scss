@@ -22,5 +22,26 @@ $lightgray: #dfdfdf;
 
   .bout_about {
     padding: 0 0 40px;
+
+    .desc {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+
+      .item {
+        padding: 10px 12px;
+        border-radius: 10px;
+
+        h3 {
+          @include font(15px, 24px, 700);
+          color: #513520;
+        }
+
+        p {
+          column-count: 1;
+          @include font(13px, 20px, 400);
+        }
+      }
+    }
   }
 }

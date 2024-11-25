@@ -39,14 +39,26 @@ $lightgray: #dfdfdf;
   background-color: #fffdf8;
   padding: 0 0 72px;
 
-  .desc-2 {
-    margin-top: 0;
-    display: flex;
+  .desc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
 
-    p {
-      max-width: 638px;
-      column-count: 1;
+    .item {
+      background: white;
+      padding: 12px 16px;
+      border: 1px solid #9a9da3;
+      border-radius: 12px;
+
+      h3 {
+        @include font(17px, 28px, 700);
+        color: #513520;
+        margin-bottom: 4px;
+      }
+
+      p {
+        column-count: 1;
+      }
     }
   }
 }
